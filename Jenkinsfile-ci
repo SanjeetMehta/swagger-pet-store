@@ -1,5 +1,6 @@
 @Library("global-pipeline-libraries@master") _
 gitCheckout{
+service="Petstore"
 branch="master"
 url="https://github.com/SanjeetMehta/swagger-pet-store.git"
 }
