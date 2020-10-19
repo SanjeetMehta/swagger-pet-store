@@ -1,4 +1,5 @@
 @Library("global-pipeline-libraries") _
-installMaven{
-
-}
+ stage('Install') {
+     echo 'Installing project'
+     installMaven
+ }
