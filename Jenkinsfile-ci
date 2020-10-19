@@ -1,6 +1,14 @@
 @Library("global-pipeline-libraries@master") _
-gitCheckout{
-branch: "master",
-url: "https://github.com/SanjeetMehta/swagger-pet-store.git"
-
+pipeline {
+    agent any
+    stages {
+        stage('Git Checkout') {
+            steps {
+            gitCheckout(
+                branch: "master",
+                url: "https://github.com/SanjeetMehta/swagger-pet-store.git"
+            )
+            }
+    }
+    }
 }
